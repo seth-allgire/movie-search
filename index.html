@@ -9,23 +9,33 @@
     <link href="movie-search.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
-    <header>this is the header</header>
-    <form class="search-container">
-      <h4>Find A Movie</h4>
-      <div>
-        <input id="mainSearch" type="text" placeholder="movie-title" />
-        <span id="spanTag"></span>
-      </div>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Type: optional</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <input type="text" placeholder="Year; eg. 1997" />
-      <input type="button" value="Submit" id="submitButton" />
-    </form>
+    <h1 class="title-header">Find a Movie</h1>
+    <div class="search-container">
+      <form class="search-form">
+        <h4 class="header">What are you looking for?</h4>
 
+        <div>
+          <p class="search-prompt">Enter a title:</p>
+          <input id="mainSearch" type="text" placeholder="movie-title" />
+          <span id="spanTag"></span>
+        </div>
+        <p class="search-prompt">Choose a type:</p>
+        <select
+          class="form-select"
+          id="option"
+          aria-label="Default select example"
+        >
+          <option selected value="">Type: optional</option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
+        <p class="search-prompt">Enter a year:</p>
+        <input type="text" id="year" placeholder="Year; eg. 1997" />
+        <input type="button" value="Submit" id="submitButton" />
+      </form>
+    </div>
+    <div id="resultField"></div>
     <script src="./movie-search.js"></script>
   </body>
 </html>

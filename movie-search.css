@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.search-container {
+  max-width: 200px;
+  /* flex: 1 0 15%; */
+  border: 2px solid black;
+  padding-left: 10px;
+  background-color: bisque;
+}
+
+.search-prompt {
+  margin-bottom: 2px;
+}
+
+.title-header {
+  text-align: center;
+  flex: 1 1 100%;
+  background-color: bisque;
+}
+
+#submitButton {
+  margin-top: 15px;
+  float: right;
+}
